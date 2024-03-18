@@ -1,0 +1,101 @@
+/* Default values */
+:root {
+  --body-color-font: #333;
+  --h1-color-font: #444;
+  --number-input-background: #ddd;
+  --body-background: #f7f7f7;
+  --input-container-background: #fff;
+  --output-div: #e8eaf6;
+  --convert-btn: #5c6bc0;
+  --convert-btn-hover: #3949ab;
+
+  --border-radius: 8px;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --font-family: "Ubuntu", sans-serif;
+  --line-height: 1.6;
+}
+
+/* Default reset to ensure cross-browser consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global font style */
+body {
+  font-family: var(--font-family);
+  background-color: var(--body-background);
+  color: var(--body-color-font);
+  line-height: var(--line-height);
+  padding: 20px;
+}
+
+main {
+  width: 80%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Header style */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--h1-color-font);
+}
+
+/* Input container style */
+#input-container {
+  max-width: 400px;
+  margin: auto;
+  background: var(--input-container-background);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+/* Label and input style */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.number-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--number-input-background);
+  border-radius: 4px;
+}
+
+/* Button style */
+.convert-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: var(--convert-btn);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.convert-btn:hover {
+  background-color: var(--convert-btn-hover);
+}
+
+/* Result style */
+#output {
+  display: none;
+  flex-direction: column;
+  max-width: 400px;
+  height: 70px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px 10px;
+  background-color: var(--output-div);
+  border-radius: 4px;
+}
